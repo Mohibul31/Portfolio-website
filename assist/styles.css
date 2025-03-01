@@ -1,0 +1,522 @@
+*{
+  scroll-behavior: smooth;
+}
+/* Preloader Fullscreen Background */
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Loader Animation */
+.loader {
+  width: 50px;
+  height: 50px;
+}
+
+/* Navbar Styling */
+.navbar {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffcc00 !important;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-size: 18px;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffcc00 !important;
+}
+
+/* Active Link */
+.navbar-nav .nav-link.active {
+  color: #ffcc00 !important;
+  font-weight: bold;
+}
+
+/* Mobile Navbar */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+/* Hero Section */
+.hero {
+  background: linear-gradient(120deg, #1e1e1e, #333);
+  color: white;
+  padding: 130px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.hero .highlight {
+  color: #ffcc00;
+}
+
+.hero h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  margin: 10px;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Hire Me Button */
+.hero .btn-primary {
+  background-color: #ffcc00;
+  border: 2px solid #ffcc00;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hire Me Hover Effect */
+.hero .btn-primary:hover {
+  background: none;
+  color: #ffcc00;
+  border: 2px solid #ffcc00;
+}
+
+/* Download CV Button */
+.hero .btn-outline-light {
+  border: 2px solid white;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Download CV Hover Effect */
+.hero .btn-outline-light:hover {
+  background: white;
+  color: black;
+  border: 2px solid white;
+}
+
+.hero .social-icons{
+  margin-top: 40px;
+}
+.hero .social-icons a {
+  color: white;
+  font-size: 24px;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.hero .social-icons a:hover {
+  color: #ffcc00;
+}
+
+/* Profile Picture Styling */
+.hero-img {
+    max-width: 80%; /* Desktop এ 80% */
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover করলে Zoom Effect */
+.hero-img:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero-img {
+        max-width: 60%;
+        margin-top: 20px;
+    }
+}
+
+/* About Section */
+.about {
+    padding: 100px 0;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about h4 {
+    font-size: 22px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* About Image */
+.about-img {
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.about-img:hover {
+    transform: scale(1.05);
+}
+
+/* Skills List */
+.skills span {
+    display: inline-block;
+    background: #ffcc00;
+    color: black;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Read More Button */
+.about .btn-primary {
+    background-color: #ffcc00;
+    border: none;
+    color: black;
+    padding: 12px 25px;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about .btn-primary:hover {
+    transform: scale(1.1);
+    background: none;
+    border: 2px solid #ffcc00;
+}
+
+/* Projects Section */
+.projects {
+    padding: 100px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.projects .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Project Card */
+.project-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.project-card .project-info {
+    padding: 20px;
+}
+
+.project-card h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Hover Effect */
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* View Project Button */
+.projects .btn-primary {
+    background-color: #ffcc00;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+
+.projects .btn-primary:hover {
+    transform: scale(1.1);
+    background: none;
+    border: 2px solid #ffcc00;
+}
+
+/* See More Button */
+.see-more {
+    display: inline-block;
+    margin-top: 20px;
+    background: #333;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.see-more:hover {
+    background: #ffcc00;
+    border: 2px solid #ffcc00;
+    color: black;
+}
+
+/* Services Section */
+.services {
+    padding: 100px 0;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.services .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Service Card */
+.service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card i {
+    font-size: 40px;
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Hover Effect */
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+/* Get in Touch Button */
+.get-in-touch {
+    display: inline-block;
+    margin-top: 20px;
+    background: #333;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.get-in-touch:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 100px 0;
+    background: #f1f1f1;
+    text-align: center;
+}
+
+.testimonials .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.client-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.testimonial-card h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Hover Effect */
+.testimonial-card:hover {
+    transform: scale(1.05);
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #ffcc00;
+}
+
+/* Contact Section */
+.contact {
+    padding: 100px 0;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.contact .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Contact Form */
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-label {
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-form .form-control {
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.contact-form .btn {
+    background: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form .btn:hover {
+    background: #333;
+    color: white;
+}
+
+/* Google Map */
+.map iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+/* Footer Section */
+.footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Social Media Icons */
+.social-icon {
+    color: #ffcc00;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #fff;
+}
+
+/* Footer Right (Responsive) */
+@media (max-width: 768px) {
+    .footer .text-md-end {
+        text-align: center;
+        margin-top: 20px;
+    }
+}

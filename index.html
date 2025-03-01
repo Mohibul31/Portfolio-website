@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assist/styles.css" />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- preloader -->
+    <div id="preloader">
+      <img class="loader" src="assist/img/Loading.svg" alt="loading" />
+    </div>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">WebCrafters</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Hero Section Start -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Side Text -->
+          <div class="col-lg-6 text-center text-lg-start">
+            <h1>Hi, I'm <span class="highlight">Mohibul Islam</span></h1>
+            <h3>Frontend Web Developer</h3>
+            <p>
+              I create modern, responsive, and user-friendly websites that bring
+              ideas to life.
+            </p>
+            <a href="mailto:webcrafters.service@gmail.com" class="btn btn-primary">Hire Me</a>
+            <a href="assist/cv/cvTemplateForWebsite.pdf" download="Resume" class="btn btn-outline-light">Download CV</a>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <!-- Right Side Image -->
+          <div class="col-lg-6 text-center">
+            <img
+              src="assist/img/profile.png"
+              alt="Profile Picture"
+              class="hero-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+    <!-- About Section Start -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Side Image -->
+          <div class="col-lg-5 text-center">
+            <img
+              src="assist/img/profile.png"
+              alt="About Me"
+              class="about-img"
+            />
+          </div>
+          <!-- Right Side Text -->
+          <div class="col-lg-7">
+            <h2>About Me</h2>
+            <h4>
+              I'm <span class="highlight">Mohibul Islam</span>, a Frontend Web
+              Developer
+            </h4>
+            <p>
+              I specialize in creating modern, responsive, and user-friendly
+              websites using HTML, CSS, JavaScript, Bootstrap, and React.js. My
+              passion is to turn ideas into reality through elegant design and
+              clean code.
+            </p>
+            <div class="skills">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Bootstrap</span>
+              <span>React.js</span>
+            </div>
+            <a href="#about" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+    <!-- Projects Section Start -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="row">
+          <!-- Project 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <img src="assist/img/project1.jpg" alt="Project 1" />
+              <div class="project-info">
+                <h3>Restaurant Website</h3>
+                <p>
+                  A fully responsive restaurant website built with Bootstrap &
+                  custom CSS.
+                </p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <img src="assist/img/project2.jpg" alt="Project 2" />
+              <div class="project-info">
+                <h3>Portfolio Website</h3>
+                <p>
+                  A modern portfolio website showcasing skills, projects, and
+                  contact details.
+                </p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <img src="assist/img/project3.jpg" alt="Project 3" />
+              <div class="project-info">
+                <h3>E-Commerce Website</h3>
+                <p>
+                  An online shopping platform with a user-friendly interface and
+                  product listings.
+                </p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn btn-secondary see-more">See More Projects</a>
+      </div>
+    </section>
+    <!-- Projects Section End -->
+    <!-- Services Section Start -->
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="section-title">My Services</h2>
+        <div class="row">
+          <!-- Service 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card">
+              <i class="fas fa-code"></i>
+              <h3>Web Development</h3>
+              <p>
+                I build modern, responsive, and user-friendly websites using
+                HTML, CSS, JavaScript, and Bootstrap.
+              </p>
+            </div>
+          </div>
+          <!-- Service 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card">
+              <i class="fas fa-paint-brush"></i>
+              <h3>UI/UX Design</h3>
+              <p>
+                Creating visually appealing and intuitive user interfaces to
+                enhance user experience.
+              </p>
+            </div>
+          </div>
+          <!-- Service 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card">
+              <i class="fas fa-shopping-cart"></i>
+              <h3>E-Commerce Solutions</h3>
+              <p>
+                Developing feature-rich and user-friendly online stores for
+                businesses.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary get-in-touch">Get in Touch</a>
+      </div>
+    </section>
+    <!-- Services Section End -->
+    <!-- Testimonials Section Start -->
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="section-title">What Clients Say</h2>
+        <div
+          id="testimonialCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- Testimonial 1 -->
+            <div class="carousel-item active">
+              <div class="testimonial-card">
+                <img
+                  src="assist/img/client1.jpg"
+                  alt="Client 1"
+                  class="client-img"
+                />
+                <h3>John Doe</h3>
+                <p>CEO, Example Company</p>
+                <p>
+                  "Mohibul did an amazing job with our website. His attention to
+                  detail and commitment to quality was remarkable. Highly
+                  recommend!"
+                </p>
+              </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="carousel-item">
+              <div class="testimonial-card">
+                <img
+                  src="assist/img/client2.jpg"
+                  alt="Client 2"
+                  class="client-img"
+                />
+                <h3>Jane Smith</h3>
+                <p>Marketing Director</p>
+                <p>
+                  "It was a pleasure working with Mohibul. He delivered a
+                  beautiful and functional website ahead of schedule. Very
+                  professional."
+                </p>
+              </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="carousel-item">
+              <div class="testimonial-card">
+                <img
+                  src="assist/img/client3.jpg"
+                  alt="Client 3"
+                  class="client-img"
+                />
+                <h3>Mike Johnson</h3>
+                <p>Product Manager</p>
+                <p>
+                  "Mohibul created an excellent e-commerce platform for us. The
+                  design and user experience were top-notch."
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials Section End -->
+    <!-- Contact Section Start -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="row">
+          <!-- Contact Form -->
+          <div class="col-md-6">
+            <form action="" method="POST" class="contact-form" id="contactForm">
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Write your message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <!-- Location Map -->
+          <div class="col-md-6">
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAP_EMBED_LINK"
+                width="100%"
+                height="100%"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+    <!-- Footer Section Start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- Footer Left -->
+          <div class="col-md-6">
+            <p>&copy; 2025 Mohibul Islam. All Rights Reserved.</p>
+          </div>
+
+          <!-- Footer Right (Social Media Links) -->
+          <div class="col-md-6 text-md-end">
+            <a href="https://facebook.com" class="social-icon" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" class="social-icon" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" class="social-icon" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com" class="social-icon" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="assist/main.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+  </body>
+</html>
